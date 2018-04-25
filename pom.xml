@@ -4,7 +4,7 @@
 
     <groupId>com.carlocayos</groupId>
     <artifactId>nexus-sample-project</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
     <packaging>jar</packaging>
 
     <name>nexus-sample-project</name>
@@ -17,6 +17,7 @@
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
 
+    <!-- SCM is not required for jgitflow releases -->
     <!--<scm>-->
         <!--<url>https://github.com/carlocayos/nexus-sample-project</url>-->
         <!--<connection>scm:git:git://github.com/carlocayos/nexus-sample-project.git</connection>-->
@@ -68,6 +69,7 @@
                 <groupId>external.atlassian.jgitflow</groupId>
                 <artifactId>jgitflow-maven-plugin</artifactId>
                 <version>1.0-m5.1</version>
+                <!-- Github keys are outdated -->
                 <dependencies>
                     <dependency>
                         <groupId>com.jcraft</groupId>
