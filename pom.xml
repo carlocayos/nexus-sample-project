@@ -4,7 +4,7 @@
 
     <groupId>com.carlocayos</groupId>
     <artifactId>nexus-sample-project</artifactId>
-    <version>0.0.7</version>
+    <version>0.0.8</version>
     <packaging>jar</packaging>
 
     <name>nexus-sample-project</name>
@@ -17,18 +17,21 @@
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
 
-    <distributionManagement>
-        <repository>
-            <id>nexus</id>
-            <name>Releases</name>
-            <url>https://nexus.internal.proximax.io/repository/maven-releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>nexus</id>
-            <name>Snapshot</name>
-            <url>https://nexus.internal.proximax.io/repository/maven-snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
+    <!-- Comment out and define in commadn line -->
+    <!-- mvn -B jgitflow:release-start -DaltDeploymentRepository="nexus::default::https://nexus.internal.proximax.io/repository/maven-public" -->
+
+    <!--<distributionManagement>-->
+        <!--<repository>-->
+            <!--<id>nexus</id>-->
+            <!--<name>Releases</name>-->
+            <!--<url>https://nexus.internal.proximax.io/repository/maven-releases</url>-->
+        <!--</repository>-->
+        <!--<snapshotRepository>-->
+            <!--<id>nexus</id>-->
+            <!--<name>Snapshot</name>-->
+            <!--<url>https://nexus.internal.proximax.io/repository/maven-snapshots</url>-->
+        <!--</snapshotRepository>-->
+    <!--</distributionManagement>-->
 
     <repositories>
         <repository>
